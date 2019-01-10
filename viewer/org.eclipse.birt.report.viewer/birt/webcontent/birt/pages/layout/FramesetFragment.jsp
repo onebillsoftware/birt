@@ -38,7 +38,7 @@
 	Viewer root fragment
 -----------------------------------------------------------------------------%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
-<HTML lang="<%= attributeBean.getLanguage() %>">
+<HTML>
 	<HEAD>
 		<TITLE><%= attributeBean.getReportTitle( ) %></TITLE>
 		<BASE href="<%= baseHref %>" >
@@ -81,11 +81,6 @@
 		
 		<script src="birt/ajax/utility/Debug.js" type="text/javascript"></script>
 		<script src="birt/ajax/lib/prototype.js" type="text/javascript"></script>
-		<script src="birt/ajax/lib/head.js" type="text/javascript"></script>
-		
-		<script type="text/javascript">	
-			<%= attributeBean.getClientInitialize( ) %>
-		</script>
 		
 		<!-- Mask -->
 		<script src="birt/ajax/core/Mask.js" type="text/javascript"></script>
@@ -150,20 +145,20 @@
 				{
 			%>
 			<TR CLASS='body_caption_top'>
-				<TD COLSPAN='2'></TD>
+<!-- 				<TD COLSPAN='2'></TD> -->
 			</TR>
 			<TR CLASS='body_caption' VALIGN='bottom'>
 				<TD COLSPAN='2'>
 					<TABLE BORDER=0 CELLSPACING="0" CELLPADDING="1px" WIDTH="100%">
 						<TR>
 							<TD WIDTH="3px"/>
-							<TD>
-								<B><%= attributeBean.getReportTitle( ) %>
-								</B>
-							</TD>
-							<TD ALIGN='right'>
-							</TD>
-							<TD WIDTH="3px"/>
+<!-- 							<TD> -->
+<%-- 								<B><%= attributeBean.getReportTitle( ) %> --%>
+<!-- 								</B> -->
+<!-- 							</TD> -->
+<!-- 							<TD ALIGN='right'> -->
+<!-- 							</TD> -->
+<!-- 							<TD WIDTH="3px"/> -->
 						</TR>
 					</TABLE>
 				</TD>
@@ -262,4 +257,5 @@
 		
 	</script>
 </HTML>
+
 

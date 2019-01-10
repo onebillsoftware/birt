@@ -158,7 +158,7 @@ AbstractBaseReportDocument.prototype = Object.extend( new AbstractReportComponen
 		
 		this.__instance.style.left = containerLeft + "px";
 
-		if (BrowserUtility.isIE) {
+		if (BrowserUtility.isIE7) {
 			var reportContainer = this.__instance.firstChild;
 
 			if (reportContainer != null) {

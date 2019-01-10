@@ -181,7 +181,7 @@ BirtProgressBar.prototype = Object.extend( new AbstractUIComponent( ),
 	 */
 	__l_show : function( )
 	{
-		[ this.__mask, this.__instance ].each( Element.show );
+		Element.show( this.__mask, this.__instance );
 		BirtPosition.center( this.__instance );
 	},
 	
@@ -190,7 +190,7 @@ BirtProgressBar.prototype = Object.extend( new AbstractUIComponent( ),
 	 */
 	__l_hide : function( )
 	{
-		[ this.__instance, this.__mask ].each( Element.hide );
+		Element.hide( this.__instance, this.__mask );
 	},
 
 	/**

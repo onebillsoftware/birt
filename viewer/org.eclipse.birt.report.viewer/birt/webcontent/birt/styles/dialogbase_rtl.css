@@ -7,18 +7,16 @@
 {
 	border-style: outset;
 	border-width: 1px;
-	border-color: #CCCCCC;
+	border-color: #cccccc;
 	background-color: gray;
-	direction: ltr;
 }
 
 /* Title bar background area */
 .dialogTitleBar
 {
 	height: 20px;
-	background-color: #4E6DA4;
+	background-color: #cccccc;
 	cursor: move;	
-	direction: rtl;
 }
 
 .dTitleBar
@@ -35,7 +33,7 @@
 {
 	font-size: 11px; 
 	font-weight: bold; 
-	font-family: tahoma, verdana, arial, sans-serif;
+	font-family: "Microsoft New Tai Lue", Tahoma, "Trebuchet MS", serif;
 	color: white;
 }
 
@@ -48,21 +46,21 @@
 
 .dTitleTextContainer
 {
-	float: right; 
+	float: left; 
 	position: relative;
 	height: 100%;	
-	width: 250px;
+	width: 1px;
 }
 
 /* Close button - width should match those of .dialogCloseBtnContainer */
 .dialogCloseBtn
 {
-	background-image: url("../images/Close.gif");
+	background: url("../images/Close.gif");
 	width: 14px;
 	height: 14px;
-	background-color: gray;
 	cursor: pointer;	 
 }
+
 
 .dCloseBtn
 {
@@ -110,7 +108,6 @@
 	position: relative;
 	text-align: center;
 	padding-top: 4px; /* distance from bottom of content area to top of divider bar*/
-	overflow: hidden;
 }
 
 /* Top divider line between dialog content area and button area */
@@ -233,7 +230,7 @@
 /* Text for OK and CANCEL buttons */
 .dialogBtnBarButtonText
 {	
-	font-family: tahoma, verdana, arial, sans-serif;
+	font-family: "Microsoft New Tai Lue", Tahoma, "Trebuchet MS", serif;
 	font-size: 11px;
 	font-weight: 400;
 	text-align: center;

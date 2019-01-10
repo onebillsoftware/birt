@@ -48,7 +48,7 @@
 				<TR>
 					<TD WIDTH="6px">&nbsp;</TD>
 					<TD WIDTH="100%" NOWRAP>
-						<B>
+						
 						<%
 							if ( attributeBean.getBookmark( ) != null )
 							{
@@ -71,7 +71,7 @@
 						<%
 							}
 						%>
-						</B>
+					
 					</TD>
 					<TD WIDTH="15px">
 						<INPUT TYPE="image" SRC="<%= imagesPath + (attributeBean.isRtl()?"LastPage":"FirstPage") + "_disabled.gif" %>" NAME='first'
@@ -99,14 +99,14 @@
 					
 					<TD WIDTH="8px">&nbsp;&nbsp;</TD>
 					
-					<TD ALIGN="right" NOWRAP><LABEL for="gotoPage"><b><%= BirtResources.getMessage( "birt.viewer.navbar.lable.goto" )%></b></LABEL></TD>
+					<TD ALIGN="right" NOWRAP><LABEL for="gotoPage"><%= BirtResources.getMessage( "birt.viewer.navbar.lable.goto" )%></LABEL></TD>
 					<TD WIDTH="2px">&nbsp;</TD>
-					<TD ALIGN="right" WIDTH="50px">
+					<TD ALIGN="right" WIDTH="30px">
 						<INPUT ID='gotoPage' TYPE='text' VALUE='' MAXLENGTH="8" SIZE='5' CLASS="birtviewer_navbar_input">
 					</TD>
 					<TD WIDTH="4px">&nbsp;</TD>
 					<TD ALIGN="right" WIDTH="10px">
-						<INPUT TYPE="image" SRC="<%= imagesPath + (attributeBean.isRtl()?"Go_rtl.gif":"Go.gif") %>" NAME='goto'
+						<INPUT TYPE="image" SRC="<%= imagesPath + (attributeBean.isRtl()?"Go_rtl.gif":"next.png") %>" NAME='goto'
 						    ALT="<%= BirtResources.getHtmlMessage( "birt.viewer.navbar.goto" )%>" 
 							TITLE="<%= BirtResources.getHtmlMessage( "birt.viewer.navbar.goto" )%>" CLASS="birtviewer_clickable">
 					</TD>

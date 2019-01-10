@@ -38,7 +38,7 @@
 	Viewer run fragment
 -----------------------------------------------------------------------------%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
-<HTML lang="<%= attributeBean.getLanguage() %>">
+<HTML>
 	<HEAD>
 		<TITLE><%= attributeBean.getReportTitle( ) %></TITLE>
 		<BASE href="<%= baseHref %>" >
@@ -82,11 +82,6 @@
 		
 		<script src="birt/ajax/utility/Debug.js" type="text/javascript"></script>
 		<script src="birt/ajax/lib/prototype.js" type="text/javascript"></script>
-		<script src="birt/ajax/lib/head.js" type="text/javascript"></script>
-		
-		<script type="text/javascript">	
-			<%= attributeBean.getClientInitialize( ) %>
-		</script>
 		
 		<!-- Mask -->
 		<script src="birt/ajax/core/Mask.js" type="text/javascript"></script>

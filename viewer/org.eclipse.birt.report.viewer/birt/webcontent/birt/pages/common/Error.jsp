@@ -40,12 +40,14 @@
 					{
 						if ( error.getMessage( ) != null )
 						{
-							out.println( ParameterAccessor.htmlEncode( new String( error.getMessage( ).getBytes( "ISO-8859-1" ),"UTF-8" ) ) );
+							//out.println( ParameterAccessor.htmlEncode( new String( error.getMessage( ).getBytes( "ISO-8859-1" ),"UTF-8" ) ) );
+							out.println( ParameterAccessor.htmlEncode( new String( "Error in Processing.Please contact Administrator.")));
 						}
 						else
 						{
 							PrintWriter writer = new PrintWriter( out );									
-							error.printStackTrace( writer );				
+							//error.printStackTrace( writer );		
+							out.println( ParameterAccessor.htmlEncode( new String( "Error in Processing.Please contact Administrator.")));
 						}					
 					}
 				%>

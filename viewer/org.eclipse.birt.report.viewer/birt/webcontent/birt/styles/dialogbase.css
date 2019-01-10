@@ -7,16 +7,20 @@
 {
 	border-style: outset;
 	border-width: 1px;
-	border-color: #CCCCCC;
+	//border-color: #CCCCCC;
 	background-color: gray;
+	border-radius: 6px 6px 6px 6px;
+	left: 28% !important;
+    top: 0 !important;
+	
 }
 
 /* Title bar background area */
 .dialogTitleBar
 {
 	height: 20px;
-	background-color: #4E6DA4;
-	cursor: move;	
+	background-color: #999999;
+	cursor: default;	
 }
 
 .dTitleBar
@@ -26,22 +30,29 @@
 	padding-top: 2px;
 	padding-bottom: 2px;
 	position: relative;
+	//border-bottom: 1px solid #EEEEEE;
+    padding: 9px 15px;
+    background-color:#333333;
+    border-radius: 6px 6px 0 0;
 }
 
 /* Title text */
 .dialogTitleText
 {
-	font-size: 11px; 
-	font-weight: bold; 
-	font-family: tahoma, verdana, arial, sans-serif;
-	color: white;
+	//font-size: 11px; 
+	//font-weight: bold; 
+	font-family: 'Lato',Arial,Helvetica,sans-serif;
+	//color: white;
+	color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .dTitleText
 {
 	vertical-align: middle; 
 	white-space: nowrap;
-	cursor: move;
+	cursor: default;
 }
 
 .dTitleTextContainer
@@ -58,8 +69,10 @@
 	background-image: url("../images/Close.gif");
 	width: 14px;
 	height: 14px;
-	background-color: gray;
+	background-color: #F2F2F2;
 	cursor: pointer;	 
+	// background: none repeat scroll 0 0 white;
+	 border-radius: 50px 50px 50px 50px;
 }
 
 .dCloseBtn
@@ -67,6 +80,16 @@
 	vertical-align: middle; 
 	background-repeat: no-repeat;
 	background-position: center right; 
+	 /*background: none repeat scroll 0 0 white;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 17px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 22px;
+    width: 20px;
+    border: 0 none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	
 }
 
 /* Close button container - width should match those of .dialogCloseBtn */
@@ -85,20 +108,21 @@
 /* Background of dialog below title bar */
 .dialogBackground
 {
-	background-color: #ECE9D8;
-	margin-bottom: 1px;
+	background-color: transparent;
+	
 }
 
 .dBackground
 {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
 	padding-top: 4px;
 }
 
 /* Border style of content area for individual dialog content */
 .dialogContentContainer
 {
+color:red;
 }
 
 /* Area from bottom of dialog content container to bottom border */
@@ -106,14 +130,18 @@
 {
 	position: relative;
 	text-align: center;
-	padding-top: 4px; /* distance from bottom of content area to top of divider bar*/
+	padding-top: 12px; /* distance from bottom of content area to top of divider bar*/
 	overflow: hidden;
+	 background: none repeat scroll 0 0 #F5F5F5;
+	border-top: 1px solid #DDDDDD;
+	box-shadow: 0 1px 0 0 #FFFFFF inset;
+	border-radius: 0 0 6px 6px;
 }
 
 /* Top divider line between dialog content area and button area */
 .dBtnBarDividerTop
 {
-	height: 1px;
+	//height: 1px;
 	background-color: gray;
 	overflow: hidden;
 }
@@ -121,17 +149,20 @@
 /* Bottom divider line between dialog content area and button area */
 .dBtnBarDividerBottom
 {
-	height: 1px;
-	background-color: #fefefe;
-	overflow: hidden;	
+//	height: 1px;
+	//background-color: #fefefe;
+	overflow: hidden;
+	//border-top: 1px solid #DDDDDD;
 }
 
 
 /* Area that contains OK and CANCEL buttons - from bottom of divider bar to top of outer border */
 .dialogBtnBar
 {	
-	height: 36px;
+	height: 30px;
 	text-align: right;
+	border-spacing: 0;
+	padding:0 12px 12px;
 }
 
 /* Area holding both OK and CANCEL buttons */
@@ -230,9 +261,10 @@
 /* Text for OK and CANCEL buttons */
 .dialogBtnBarButtonText
 {	
-	font-family: tahoma, verdana, arial, sans-serif;
+	//font-family: tahoma, verdana, arial, sans-serif;
 	font-size: 11px;
 	font-weight: 400;
 	text-align: center;
 	vertical-align: middle;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
