@@ -127,6 +127,9 @@ public class ViewingSessionUtil
 			// save the object in a request attribute
 		request.setAttribute( ParameterAccessor.ATTR_VIEWING_SESSION,
 						session );
+		request.getSession().setAttribute(
+				IBirtConstants.ATTRIBUTE_VIEWING_SESSION_MANAGER,
+				manager );
 		return session;
 	}
 
